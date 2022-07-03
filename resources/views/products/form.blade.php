@@ -82,7 +82,7 @@
                 @endif
             </div>
 
-            </div>asdasfdds
+            </div>
         <br>
     </div>
             <div class="card-footer border-primary">
