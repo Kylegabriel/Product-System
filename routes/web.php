@@ -22,6 +22,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/products', function () {
+    return view('products.index');
+})->middleware('auth');
+
 // Route::resource('dashboard', DashboardController::class);
 Route::resource('products', ProductsController::class); 
 Route::resource('settings', SettingsController::class)->only([

@@ -96,6 +96,7 @@
                         email: {
                           // required: true,
                           pattern : /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/,
+                          required: true,
                           // remote:{
                           //       url  :"/checkEmail",
                           //       type :"GET",
@@ -143,7 +144,7 @@
                         password: {
                           required: true,
                           minlength: 4,
-                          maxlength: 10
+                          maxlength: 15
                         },
                         comfirm_password: {
                           required: true,

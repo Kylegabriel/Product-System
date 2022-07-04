@@ -43,9 +43,12 @@
                     </a>
                     <div class="dropdown-divider"></div>
 
-                    <a class="dropdown-item" href="{{ url('/logout') }}">
+                    <a class="dropdown-item" href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                          @csrf
+                      </form>
                       <span class="fa fa-power-off"></span>
-
+                      Logout
                     </a>
                   </div>
                 </li>
